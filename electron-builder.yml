@@ -1,0 +1,63 @@
+appId: fr.cobblenite.launcher
+productName: Cobblenite Launcher
+copyright: Copyright © 2026 Cobblenite
+
+directories:
+  buildResources: build
+  output: dist
+
+files:
+  - "**/*"
+  - "!dist/**"
+  - "!build/**"
+  - "!.github/**"
+
+extraResources:
+  - from: libraries/
+    to: libraries/
+    filter:
+      - "**/*"
+
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: build/icon.ico
+  artifactName: "Cobblenite-Launcher-setup-${version}.${ext}"
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  installerIcon: build/icon.ico
+  uninstallerIcon: build/uninstallerIcon.ico
+  allowElevation: true
+
+mac:
+  target:
+    - target: dmg
+      arch:
+        - x64
+        - arm64
+  icon: build/icon.icns
+  category: public.app-category.games
+  artifactName: "Cobblenite-Launcher-${version}-${arch}.${ext}"
+  hardenedRuntime: false
+  gatekeeperAssess: false
+
+dmg:
+  artifactName: "Cobblenite-Launcher-${version}-${arch}.${ext}"
+
+linux:
+  target:
+    - target: AppImage
+      arch:
+        - x64
+  icon: build/icon.png
+  artifactName: "Cobblenite-Launcher-${version}.${ext}"
+  category: Game
+
+publish:
+  - provider: github
+    owner: Loukoulele
+    repo: cobblenite-launcher
