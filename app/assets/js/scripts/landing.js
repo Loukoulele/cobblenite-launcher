@@ -559,7 +559,7 @@ async function dlAsync(login = true) {
     if(!_fs.existsSync(optionsFile)) {
         loggerLaunchSuite.info('First launch detected, downloading default configs...')
         try {
-            const configZipUrl = 'http://79.137.34.10/cobblenite/default-configs.zip'
+            const configZipUrl = 'http://163.5.59.238/cobblenite/default-configs.zip'
             const configZipPath = _path.join(instanceDir, 'default-configs.zip')
             _fs.ensureDirSync(instanceDir)
             const got = require('got')
