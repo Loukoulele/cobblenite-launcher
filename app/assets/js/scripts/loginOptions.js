@@ -1,6 +1,7 @@
 const loginOptionsCancelContainer = document.getElementById('loginOptionCancelContainer')
 const loginOptionMicrosoft = document.getElementById('loginOptionMicrosoft')
 const loginOptionMojang = document.getElementById('loginOptionMojang')
+const loginOptionOffline = document.getElementById('loginOptionOffline')
 const loginOptionsCancelButton = document.getElementById('loginOptionCancelButton')
 
 let loginOptionsCancellable = false
@@ -34,6 +35,10 @@ loginOptionMojang.onclick = (e) => {
         loginViewOnCancel = loginOptionsViewOnLoginCancel
         loginCancelEnabled(true)
     })
+}
+
+loginOptionOffline.onclick = (e) => {
+    switchView(getCurrentView(), VIEWS.offlineLogin, 500, 500)
 }
 
 loginOptionsCancelButton.onclick = (e) => {

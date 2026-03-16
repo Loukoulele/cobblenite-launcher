@@ -519,7 +519,8 @@ function processLogOut(val, isLastAccount){
             ipcRenderer.send(MSFT_OPCODE.OPEN_LOGOUT, uuid, isLastAccount)
         })
     } else {
-        AuthManager.removeMojangAccount(uuid).then(() => {
+        const removePromise = targetAcc.type === 'offline' ? AuthManager.removeOfflineAccount(uuid) : AuthManager.removeMojangAccount(uuid)
+        removePromise.then(() => {
             if(!isLastAccount && uuid === prevSelAcc.uuid){
                 const selAcc = ConfigManager.getSelectedAccount()
                 refreshAuthAccountSelected(selAcc.uuid)

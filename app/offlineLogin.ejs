@@ -1,0 +1,36 @@
+<div id="offlineLoginContainer" style="display: none;">
+    <div id="offlineLoginContent">
+        <div class="offlineLoginMainContent">
+            <!-- Etape 1 : Warning -->
+            <div id="offlineWarningStep" style="display: flex; flex-direction: column; align-items: center;">
+                <h2>Jouer hors-ligne</h2>
+                <div class="offlineLoginWarning">
+                    <span class="offlineLoginWarningIcon">&#9888;</span>
+                    <p>Si tu poss&egrave;des un compte Microsoft et que tu as d&eacute;j&agrave; jou&eacute; sur Cobblenite, <strong>ne continue PAS ici</strong>. Tu perdras <strong>TOUS</strong> tes Pok&eacute;mons, ton inventaire et ton profil. Le staff ne pourra pas t'aider &agrave; les r&eacute;cup&eacute;rer. Utilise le bouton <strong>Microsoft</strong> &agrave; la place.</p>
+                </div>
+                <p class="offlineLoginNote">Ce mode est r&eacute;serv&eacute; aux joueurs <strong>sans compte Microsoft</strong>.</p>
+                <div class="offlineWarningButtons">
+                    <button id="offlineWarningContinue" class="loginOptionButton offlineWarningContinueBtn">
+                        <span>Je comprends, continuer</span>
+                    </button>
+                    <button id="offlineWarningBack" class="offlineBackLink">Retour</button>
+                </div>
+            </div>
+            <!-- Etape 2 : Formulaire pseudo -->
+            <div id="offlineFormStep" style="display: none;">
+                <h2>Choisis ton pseudo</h2>
+                <div class="offlineLoginForm">
+                    <div class="offlineLoginFieldContainer">
+                        <input id="offlineLoginUsername" type="text" placeholder="Pseudo (3-16 caracteres)" maxlength="16" autocomplete="off" spellcheck="false">
+                        <span id="offlineLoginError" class="offlineLoginError"></span>
+                    </div>
+                    <button id="offlineLoginButton" class="loginOptionButton" disabled>
+                        <span>Jouer hors-ligne</span>
+                    </button>
+                    <button id="offlineFormBack" class="offlineBackLink">Retour</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/scripts/offlineLogin.js"></script>
+</div>
