@@ -1,0 +1,20 @@
+# Cobblenite Launcher - Custom Language File
+
+[ejs.app]
+title = "Cobblenite Launcher"
+
+[ejs.landing]
+mediaGitHubURL = "#"
+mediaXURL = "#"
+mediaInstagramURL = "#"
+mediaYouTubeURL = "#"
+mediaDiscordURL = "https://discord.gg/cobblenite"
+
+[ejs.settings]
+sourceGithubLink = "#"
+supportLink = "https://discord.gg/cobblenite"
+
+[ejs.welcome]
+welcomeHeader = "BIENVENUE SUR COBBLENITE"
+welcomeDescription = "Cobblenite est un serveur Minecraft Cobblemon francophone. Explore la region de Kanto, capture des Pokemon, affronte d'autres dresseurs et deviens le meilleur ! Tous les mods sont installes automatiquement par le launcher."
+welcomeDescCTA = "Tu es a quelques clics de l'aventure Pokemon !"

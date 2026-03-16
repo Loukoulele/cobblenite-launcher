@@ -1,0 +1,129 @@
+<div id="landingContainer" style="display: none;">
+    <div id="upper">
+        <div id="left">
+            <div id="image_seal_container">
+                <img id="image_seal" src="assets/images/SealCircle.png"/>
+                <div id="updateAvailableTooltip"><%- lang('landing.updateAvailableTooltip') %></div>
+            </div>
+        </div>
+        <div id="content">
+        </div>
+        <div id="right">
+            <div id="rightContainer">
+                <div id="server_status_wrapper">
+                    <span id="player_count">...</span>
+                    <span class="bot_label" id="landingPlayerLabel">joueurs connectés</span>
+                </div>
+                <div class="topBarDivider"></div>
+                <div id="topBarLinks">
+                    <a href="https://discord.gg/zb7mzhqR" class="topBarLink" title="Discord">
+                        <svg class="topBarIcon" viewBox="35.34 34.3575 70.68 68.71500"><g><path d="M81.23,78.48a6.14,6.14,0,1,1,6.14-6.14,6.14,6.14,0,0,1-6.14,6.14M60,78.48a6.14,6.14,0,1,1,6.14-6.14A6.14,6.14,0,0,1,60,78.48M104.41,73c-.92-7.7-8.24-22.9-8.24-22.9A43,43,0,0,0,88,45.59a17.88,17.88,0,0,0-8.38-1.27l-.13,1.06a23.52,23.52,0,0,1,5.8,1.95,87.59,87.59,0,0,1,8.17,4.87s-10.32-5.63-22.27-5.63a51.32,51.32,0,0,0-23.2,5.63,87.84,87.84,0,0,1,8.17-4.87,23.57,23.57,0,0,1,5.8-1.95l-.13-1.06a17.88,17.88,0,0,0-8.38,1.27,42.84,42.84,0,0,0-8.21,4.56S37.87,65.35,37,73s-.37,11.54-.37,11.54,4.22,5.68,9.9,7.14,7.7,1.47,7.7,1.47l3.75-4.68a21.22,21.22,0,0,1-4.65-2A24.47,24.47,0,0,1,47.93,82S61.16,88.4,70.68,88.4c10,0,22.75-6.44,22.75-6.44a24.56,24.56,0,0,1-5.35,4.56,21.22,21.22,0,0,1-4.65,2l3.75,4.68s2,0,7.7-1.47,9.89-7.14,9.89-7.14.55-3.85-.37-11.54"/></g></svg>
+                    </a>
+                    <a href="https://cobblenite.tebex.io" class="topBarLink" title="Boutique">
+                        <svg class="topBarIcon" viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                    </a>
+                    <a href="https://cobblenite.fr" class="topBarLink" title="Site officiel">
+                        <svg class="topBarIcon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    </a>
+                </div>
+                <div class="topBarDivider"></div>
+                <div id="user_content">
+                    <div id="avatarContainer">
+                        <button id="avatarOverlay"><%- lang('landing.usernameEditButton') %></button>
+                    </div>
+                </div>
+                <div id="mediaContent" style="display:none;">
+                    <div id="internalMedia">
+                        <div class="mediaContainer" id="settingsMediaContainer">
+                            <button class="mediaButton" id="settingsMediaButton"></button>
+                        </div>
+                    </div>
+                    <div id="externalMedia">
+                        <div class="mediaContainer"><a href="#" class="mediaURL" id="linkURL"></a></div>
+                        <div class="mediaContainer"><a href="#" class="mediaURL" id="xURL"></a></div>
+                        <div class="mediaContainer"><a href="#" class="mediaURL" id="instagramURL"></a></div>
+                        <div class="mediaContainer"><a href="#" class="mediaURL" id="youtubeURL"></a></div>
+                        <div class="mediaContainer"><a href="https://discord.gg/zb7mzhqR" class="mediaURL" id="discordURL"></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="lower">
+        <div id="left">
+            <div class="bot_wrapper">
+                <div id="content">
+                    <div id="lower_user_display">
+                        <span id="user_text"><%- lang('landing.usernamePlaceholder') %></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="center" style="display:none;">
+            <div class="bot_wrapper"><div id="content"></div></div>
+        </div>
+        <div id="right">
+            <div class="bot_wrapper">
+                <div id="launch_content">
+                    <button id="settingsButtonBottom">
+                        <svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:white;"><path d="M19.14,12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74,8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.07.62-.07.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12,15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+                    </button>
+                    <button id="launch_button">JOUER</button>
+                    <button id="server_selection_button" class="bot_label" style="display:none;"><%- lang('landing.launchButtonPlaceholder') %></button>
+                </div>
+                <div id="launch_details">
+                    <div id="launch_details_left">
+                        <span id="launch_progress_label">0%</span>
+                        <div class="bot_divider"></div>
+                    </div>
+                    <div id="launch_details_right">
+                        <progress id="launch_progress" value="22" max="100"></progress>
+                        <span id="launch_details_text" class="bot_label"><%- lang('landing.launchDetails') %></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hidden: Mojang status (needed by JS) -->
+    <div style="display:none;">
+        <div id="mojangStatusWrapper">
+            <span id="mojang_status_icon">&#8226;</span>
+            <div id="mojangStatusTooltip">
+                <div id="mojangStatusTooltipTitle"></div>
+                <div id="mojangStatusEssentialContainer"></div>
+                <div id="mojangStatusNonEssentialContainer"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Hidden: News (needed by JS) -->
+    <div id="newsContainer" style="display:none;">
+        <div id="newsContent" article="-1" style="display: none;">
+            <div id="newsStatusContainer">
+                <div id="newsStatusContent">
+                    <div id="newsTitleContainer"><a id="newsArticleTitle" href="#">Lorem Ipsum</a></div>
+                    <div id="newsMetaContainer">
+                        <div id="newsArticleDateWrapper"><span id="newsArticleDate"></span></div>
+                        <div id="newsArticleAuthorWrapper"><span id="newsArticleAuthor"></span></div>
+                        <a href="#" id="newsArticleComments"></a>
+                    </div>
+                </div>
+                <div id="newsNavigationContainer">
+                    <button id="newsNavigateLeft"></button>
+                    <span id="newsNavigationStatus"></span>
+                    <button id="newsNavigateRight"></button>
+                </div>
+            </div>
+            <div id="newsArticleContainer">
+                <div id="newsArticleContent">
+                    <div id="newsArticleContentScrollable"></div>
+                </div>
+            </div>
+        </div>
+        <div id="newsErrorContainer">
+            <div id="newsErrorLoading"><span id="nELoadSpan" class="newsErrorContent"></span></div>
+            <div id="newsErrorFailed" style="display:none;"><span id="nEFailedSpan" class="newsErrorContent"></span><button id="newsErrorRetry"></button></div>
+            <div id="newsErrorNone" style="display:none;"><span id="nENoneSpan" class="newsErrorContent"></span></div>
+        </div>
+    </div>
+    <script src="./assets/js/scripts/landing.js"></script>
+</div>
