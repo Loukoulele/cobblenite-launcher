@@ -2,7 +2,7 @@ const { DistributionAPI } = require('helios-core/common')
 
 const ConfigManager = require('./configmanager')
 
-exports.REMOTE_DISTRO_URL = 'http://163.5.59.238/cobblenite/distribution.json'
+exports.REMOTE_DISTRO_URL = 'http://cdn.cobblenite.fr/cobblenite/distribution.json'
 
 const api = new DistributionAPI(
     ConfigManager.getLauncherDirectory(),
